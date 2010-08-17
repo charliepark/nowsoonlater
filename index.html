@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />	
+	<title>Do Now / Do Soon / Do Later</title>
+	<style type="text/css" media="screen">
+		/* Eric Meyer's Reset (http://meyerweb.com/eric/tools/css/reset/) */
+		/* v1.0 | 20080212 */
+
+		/* minified by Charlie Park (http://charliepark.org) */
+
+		a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, font, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var{background:transparent;border:0;font-family:"Gill Sans",'Helvetica Neue',helvetica,verdana,sans-serif;font-size:100%;font-weight:normal;margin:0;outline:0;padding:0;vertical-align:baseline;
+			font-size:12px;line-height:18px}
+		body{line-height:1}
+		ol, ul{list-style:none}
+		blockquote, q {quotes:none}
+		blockquote:before, blockquote:after, q:before, q:after{content: '';content: none}
+
+		/* remember to define focus styles! */
+		:focus{outline:0}
+
+		/* remember to highlight inserts somehow! */
+		ins{text-decoration:none}
+		del{text-decoration:line-through}
+
+		/* tables still need 'cellspacing="0"' in the markup */
+		table{border-collapse:collapse;border-spacing:0}
+
+body{text-align:center;}
+
+h2{border-top:4px solid #333;color:#333;font-size:18px;font-weight:lighter;height:24px;line-height:24px;padding-top:5px;text-indent:2px;text-transform:uppercase;}
+h3{border-top:2px solid #999;font-size:14px;font-weight:lighter;margin:5px 0;padding-top:4px;text-indent:2px;text-transform:uppercase;}
+li.do_list li{border-top:1px solid #eee;font-family:verdana;font-size:11px;line-height:14px;margin:0;padding: 1px 4px 4px 20px;text-indent:-16px;}
+li.soon{color:#999}
+li.later{color:#ccc}
+
+li.project input{ background:rgba(255,255,255,0.2);border:0;font-size:12px;height:20px;line-height:20px;margin-right:-9px;position:absolute;top:1px;right:0;width:500px;-moz-border-radius:2px;}
+li.do_list{border-bottom:1px solid #eee;float:left;margin-right:30px;width:180px}
+li.do_list.later{margin-right:0;}
+li.project{clear:both;padding:100px 0 0;position:relative;}
+ul#content{margin: 0 auto;text-align:left;width:600px;}
+
+
+	</style>
+</head>
+<body>
+	<ul id="content">
+		<li class="project">
+			<h2>Monotask</h2>
+			<input />
+			<ul class="do_lists">
+				<li class="do_list now">
+					<h3>do now</h3>
+					<ul>
+						<li>write up billing thoughts</li>
+					</ul>
+				</li>
+				<li class="do_list soon">
+					<h3>do soon</h3>
+					<ul>
+						<li>go to Tony's</li>
+					</ul>
+				</li>
+				<li class="do_list later">
+					<h3>do later</h3>
+					<ul>
+						<li>write to BoingBoing</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="project">
+			<h2>PearBudget</h2>
+			<ul class="do_lists">
+				<li class="do_list now">
+					<h3>do now</h3>
+					<ul>
+						<li></li>
+					</ul>
+				</li>
+				<li class="do_list soon">
+					<h3>do soon</h3>
+					<ul>
+						<li>referral kickback for users</li>
+						<li>weekly recurring receipts</li>
+					</ul>
+				</li>
+				<li class="do_list later">
+					<h3>do later</h3>
+					<ul>
+						<li></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<input style="background:#ccc;border:0;font-size:20px;height:30px;line-height:30px;margin:0 auto;color:#000;width:580px;-moz-border-radius:10px;padding:0 10px;position:fixed;bottom:50px;left:50%;margin-left:-300px;" />
+</body>
+</html>
