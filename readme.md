@@ -12,11 +12,15 @@ So that's the big idea. Tasks divided by how soon they need your attention.
 
 Oh. Here's the fun bit. You only get ONE task in the "Now" column. You get FIVE in the "Soon" column. All the rest fall under "Later."
 
+If you want to see a static html file showing what the UI looks like on this, you can open up the index.html page and view that.
+
 ## Installation
 
 If there's any real interest in this, I'm happy to set up a server and run this. For now, though, I'm going to let you have the code and run it on your own machine.
 
-To run Now/Soon/Later, you need to have installed Sinatra and DataMapper on your machine. And, of course, Ruby. Just download the repository to your machine, cd into the directory, and run 'ruby nsl.rb'. That should do it.
+To run Now/Soon/Later, you need to have installed Sinatra and DataMapper on your machine. And, of course, Ruby.
+
+Just download the repository to your machine, cd into the directory, and run 'ruby nsl.rb'. That should do it.
 
 ## Help
 
