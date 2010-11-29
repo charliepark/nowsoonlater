@@ -24,4 +24,4 @@ Just download the repository to your machine, cd into the directory, and run 'ru
 
 ## Help
 
-Shoot me a tweet at twitter.com/charliepark if you have questions. If you want to fork this and build it out futher, please feel free to fork and then throw me a pull request.
+Shoot me a tweet at twitter.com/charliepark if you have questions. If you want to build it out further, please feel free to fork and then throw me a pull request.
