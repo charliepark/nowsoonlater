@@ -9,9 +9,8 @@
 
 		/* minified by Charlie Park (http://charliepark.org) */
 
-		a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, font, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var{background:transparent;border:0;font-family:"Gill Sans",'Helvetica Neue',helvetica,verdana,sans-serif; font-size:100%;font-weight:normal;margin:0;outline:0;padding:0;vertical-align:baseline;
-			font-size:12px;line-height:18px}
-		body{line-height:1}
+		a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, form, font, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var{background:transparent;border:0;font-size:100%;font-weight:normal;margin:0;outline:0;padding:0;vertical-align:baseline;}
+		body{font-family:"Gill Sans",'Helvetica Neue',helvetica,verdana,sans-serif;font-size:12px;line-height:18px;line-height:1}
 		ol, ul{list-style:none}
 		blockquote, q {quotes:none}
 		blockquote:before, blockquote:after, q:before, q:after{content: '';content: none}
@@ -30,22 +29,26 @@ a{color:#c00;text-decoration:none;}
 
 body{text-align:center;}
 
-div#footer{clear:both;height:64px;margin-top:64px;padding-top:64px;}
+div#footer{clear:both;height:60px;margin-top:60px;padding-top:64px;}
 
-h2{border-top:4px solid #c00;color:#333;font-size:48px;font-weight:lighter;line-height:96px;text-indent:2px;text-transform:uppercase;}
-h3{border-top:2px solid #333;font-size:32px;font-weight:lighter;line-height:64px;text-indent:2px;text-transform:uppercase;}
+h2{border-top:4px solid #c00;color:#333;font-size:48px;font-weight:lighter;line-height:90px;text-indent:2px;text-transform:uppercase;}
+h3{border-top:2px solid #333;font-size:32px;font-weight:lighter;line-height:60px;text-indent:2px;text-transform:uppercase;}
 .soon h3{border-color:#999}
 .later h3{border-color:#ccc}
 
-li.do_list li{border-top:1px solid #eee;font-family:verdana;font-size:16px;line-height:32px;margin:0;padding: 0px 4px 0px 20px;position:relative;text-indent:-16px;}
+xinput{ background:rgba(0,255,255,0.2);border:0;font-size:12px;height:20px;line-height:20px;margin-right:-9px;position:absolute;top:1px;right:0;width:500px;-moz-border-radius:2px;}
+input.item{border:0;color:inherit;font-family:verdana;font-size:16px;height:auto;line-height:30px;}
+
+li{overflow:hidden;}
+li.do_list li{background:url('http://colors.awesometm.com/eeeeee.png') 0 0 repeat-x;font-family:verdana;font-size:16px;line-height:30px;margin:0;padding: 0 4px 0 34px;position:relative;text-indent:-30px}
+li.do_list li.sub{font-size:12px;padding-left:30px;}
+
 li.now{color:#333}
 li.soon{color:#999}
 li.later{color:#ccc}
 
-xinput{ background:rgba(0,255,255,0.2);border:0;font-size:12px;height:20px;line-height:20px;margin-right:-9px;position:absolute;top:1px;right:0;width:500px;-moz-border-radius:2px;}
-input.item{border:0;color:inherit;font-family:verdana;font-size:16px;height:auto;line-height:32px;}
 
-li.do_list{border-bottom:1px solid #eee;float:left;margin-right:32px;width:384px} /* (3 * 300) + (2 * 30)  */
+li.do_list{background:url('http://colors.awesometm.com/eeeeee.png') 0 100% repeat-x;float:left;margin-right:32px;width:384px} /* (3 * 300) + (2 * 30)  */
 li.do_list.later{margin-right:0;}
 li.project{clear:both;padding:96px 0 0;position:relative;}
 
@@ -53,9 +56,13 @@ span{font:inherit}
 span.actions{display:none;position:absolute;top:0;right:0;}
 li li li:hover span.actions{display:block}
 
-li li li span.actions a{opacity:.3}
-li li li:hover span.actions:hover a{opacity:.6}
-li li li:hover span.actions:hover a:hover{opacity:1}
+li li li span.actions a{ border-left:1px solid #ccc;color:#c99;margin: 0;padding:0 8px;}
+li li li span.actions a:first-child{border:0}
+li li li:hover span.actions:hover a:hover{color:#c00}
+a.move:hover{cursor:move}
+
+textarea{border:0;border-left:1px solid #eee;color:inherit;display:block;font:inherit;height:90px;line-height:30px;opacity:.6;margin:0;padding:0 6px;width:100%;
+	DISPLAY:NONE;}
 
 ul#content{margin: 0 auto;text-align:left;width:1216px;}
 
@@ -66,25 +73,54 @@ ul#content{margin: 0 auto;text-align:left;width:1216px;}
 	<ul id="content">
 		<li class="project">
 			<h2>Monotask</h2>
-			<input />
 			<ul class="do_lists">
 				<li class="do_list now">
 					<h3>do now</h3>
 					<ul>
-						<li><span class="item">write up billing thoughts</span></li>
-						<li><span class="item">get billing working</span><span class="actions"><a href="">move</a> <a href="">done</a></span></li>
+						<li>wizard!
+							<ul>
+								<li>on paper, figure out flow</li>
+							</ul>
+						</li>
 					</ul>
 				</li>
 				<li class="do_list soon">
 					<h3>do soon</h3>
 					<ul>
-						<li>go to Tony's</li>
+						<li>find a "progress" indicator for when the site is loading.</li>
+						<li>game mechanics of signup</li>
+						<li><span class="item">get billing working</span><span class="actions"><a href="" class="move">move</a><a href="">^</a><a href="">done</a></span>
+							<textarea>right now: subscriptions should be working
+							</textarea></li>
 					</ul>
 				</li>
 				<li class="do_list later">
 					<h3>do later</h3>
 					<ul>
-						<li>write to BoingBoing</li>
+						<li></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="project">
+			<h2>General</h2>
+			<ul class="do_lists">
+				<li class="do_list now">
+					<h3>do now</h3>
+					<ul>
+						<li>Q3 Taxes - find "receipt" papers</li>
+					</ul>
+				</li>
+				<li class="do_list soon">
+					<h3>do soon</h3>
+					<ul>
+						<li></li>
+					</ul>
+				</li>
+				<li class="do_list later">
+					<h3>do later</h3>
+					<ul>
+						<li></li>
 					</ul>
 				</li>
 			</ul>
@@ -105,7 +141,6 @@ ul#content{margin: 0 auto;text-align:left;width:1216px;}
 						<li>weekly recurring receipts</li>
 						<li>split receipts</li>
 						<li>feedback window</li>
-						<li>shorten credit card billing page</li>
 						<li>bank account window</li>
 					</ul>
 				</li>
@@ -113,6 +148,32 @@ ul#content{margin: 0 auto;text-align:left;width:1216px;}
 					<h3>do later</h3>
 					<ul>
 						<li><input class="item" value="convert to Rails 3" /></li>
+						<li>shorten credit card billing page</li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li class="project">
+			<h2>Now/Soon/Later</h2>
+			<ul class="do_lists">
+				<li class="do_list now">
+					<h3>do now</h3>
+					<ul>
+						<li>turn it into a Rails 3 app. <strike>Or Sinatra?</strike></li>
+					</ul>
+				</li>
+				<li class="do_list soon">
+					<h3>do soon</h3>
+					<ul>
+						<li>set each item to be "projectible" ... can be converted into a "project" with one button, and then given its own set of now / soon / later options</li>
+					</ul>
+				</li>
+				<li class="do_list later">
+					<h3>do later</h3>
+					<ul>
+						<li>items should auto-fill. 1 in "now", 5 in "soon", the rest in later. assumption is that the top is the highest priority, so if the "now" is marked as "done", the top "soon" shifts over, everything moves up, and the top "later" shifts to "soon"</li>
+						<li>items should be draggable</li>
+						<li>items should be sortable</li>
 					</ul>
 				</li>
 			</ul>
