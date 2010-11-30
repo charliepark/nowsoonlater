@@ -1,7 +1,7 @@
 require 'rubygems'
-require 'sinatra'
-require 'dm-core'
-require 'dm-migrations'
+require 'vendor/sinatra/lib/dm-core'
+require 'vendor/sinatra/lib/dm-migrations'
+require 'vendor/sinatra/lib/sinatra.rb'
 
 use Rack::MethodOverride
 
